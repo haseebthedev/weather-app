@@ -1,7 +1,7 @@
 let request = require('request');
 
 let apiKey = '990e8f0e1a45a79fb030d76a99ad7a93';
-let city = 'rawalpindi';
+let city = 'Islamabad';
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=Metric&appid=${apiKey}`
 
 request(url, function (err, response, body) {
