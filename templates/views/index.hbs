@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e732c1b191.js" crossorigin="anonymous"></script>
     <title>Weather App</title>
 </head>
 
 <body>
     {{>header}}
 
-    <p>Weather Application 2020</p>
+    <div class="main-container">
+
+        <form class="Formbox" action="/" method="POST">
+            <input id="UserInput" name="location" type="text" placeholder="Enter City/Country">
+            <button id="SearchBtn" type="submit">SUBMIT</button>
+       </form>
+
+        <div class="weather-container">
+            {{country}} <br/>
+            {{coordinates}} <br/><br/>
+            <h2>{{weather}}</h2>
+            {{message}}
+        </div>
+    </div>
 
     {{>footer}}
+
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
