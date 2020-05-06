@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.post("/", (req, res) => {
+app.post("/",  async (req, res) => {
   if (!req.body.location || req.body.location === "") {
     return res.render("index", {
       coordinates: "Please enter any location to search !",
@@ -42,7 +42,7 @@ app.post("/", (req, res) => {
     let city = req.body.location;
     let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=Metric&appid=${apiKey}`
 
-    request(url, function (err, response, body) {
+    await request(url, function (err, response, body) {
       let weather = JSON.parse(body);
       if(weather.cod === "404"){
         return res.render("index", {
