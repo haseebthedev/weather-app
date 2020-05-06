@@ -28,7 +28,7 @@ header {
 }
 
 .profileImg {
-  width: 300px;
+  width: 260px;
 }
 
 footer {
@@ -44,6 +44,7 @@ footer {
 footer a {
   text-decoration: none;
   font-size: medium;
+  color: rgba(47,114,193,1);
 }
 
 .Formbox {

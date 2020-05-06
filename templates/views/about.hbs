@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather App</title>
 </head>
 
 <body>
-    {{>header}}
+    {{!-- {{>header}}
     <img class="profileImg" src="./img/me.jpg">
+    {{>footer}} --}}
+
+    {{>header}}
+
+    <div class="main-container">
+        <h2>Ex Android developer. Currently,
+            learning FullStack Web Dev.</h2>
+
+        <img class="profileImg" src="./img/me.jpg">
+                
+        <h3>Name: Haseeb Ahmed Saeed</h3>
+        <h3>Age: 22 years old</h3>
+        <h3>Location: Rawalpindi, Pakistan</h3>
+        <h3>Education: Studying BS(CS)</h3>
+    </div>
+
     {{>footer}}
 
 </body>
