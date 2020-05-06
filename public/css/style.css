@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 16px;
 }
 
@@ -74,4 +74,22 @@ footer a {
   padding-top: 20px;
   padding-bottom: 10px;
   font-size: larger;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 2.6rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Formbox {
+    display: flex;
+    justify-content: center;
+  }
 }
