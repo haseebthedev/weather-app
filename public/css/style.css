@@ -94,6 +94,10 @@ footer a {
     justify-content: center;
   }
 
+  .profileImg {
+    width: 100%;
+  }
+
   footer {
     display: block;
     text-align: center;
