@@ -92,4 +92,9 @@ footer a {
     display: flex;
     justify-content: center;
   }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
 }
