@@ -38,7 +38,7 @@ app.post("/",  async (req, res) => {
     });
   } 
   else {
-    let apiKey = '990e8f0e1a45a79fb030d76a99ad7a93';
+    let apiKey = process.env.apiKey;
     let city = req.body.location;
     let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=Metric&appid=${apiKey}`
 
